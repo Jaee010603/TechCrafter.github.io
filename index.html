@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -43,8 +43,12 @@
 		<span class="btn btn-mini">En</span>
 		<a href="product_summary.html"><span>&pound;</span></a>
 		<span class="btn btn-mini">₱155.00</span>
-		<a href="product_summary.html"><span class="">₱</span></a>
-		<a href="product_summary.html"><span class="btn btn-mini btn-primary"><i class="icon-shopping-cart icon-white"></i> [ 3 ] Itemes in your cart </span> </a> 
+		<a href="product_summary.html" id="cart-button" class="btn btn-mini btn-primary">
+			<span class="cart-currency">₱</span>
+			<i class="icon-shopping-cart icon-white"></i>
+			[ <span id="item-count-display">3</span> ] Items in your cart
+		</a>
+		  
 	</div>
 	</div>
 </div>
@@ -408,7 +412,14 @@
 						Lorem Ipsum is simply dummy text. 
 					  </p>
 					 
-					  <h4 style="text-align:center"><a class="btn" href="#"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">₱222.00</a></h4>
+					  <h4 style="text-align:center">
+						<a class="btn" href="#"> <i class="icon-zoom-in"></i></a>
+						<a class="btn btn-add-to-cart" href="javascript:void(0)" data-name="Product Name" data-price="222.00">
+						  Add to <i class="icon-shopping-cart"></i>
+						</a>
+						<a class="btn btn-primary" href="#">₱222.00</a>
+					  </h4>
+					  
 					</div>
 				  </div>
 				</li>
@@ -420,7 +431,14 @@
 					  <p> 
 						Lorem Ipsum is simply dummy text. 
 					  </p>
-					 <h4 style="text-align:center"><a class="btn" href="#"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">₱222.00</a></h4>
+					  <h4 style="text-align:center">
+						<a class="btn" href="#"> <i class="icon-zoom-in"></i></a>
+						<a class="btn btn-add-to-cart" href="javascript:void(0)" data-name="Product Name" data-price="222.00">
+						  Add to <i class="icon-shopping-cart"></i>
+						</a>
+						<a class="btn btn-primary" href="#">₱222.00</a>
+					  </h4>
+					  
 					</div>
 				  </div>
 				</li>
@@ -432,7 +450,14 @@
 					  <p> 
 						Lorem Ipsum is simply dummy text. 
 					  </p>
-					   <h4 style="text-align:center"><a class="btn" href="#"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">₱222.00</a></h4>
+					  <h4 style="text-align:center">
+						<a class="btn" href="#"> <i class="icon-zoom-in"></i></a>
+						<a class="btn btn-add-to-cart" href="javascript:void(0)" data-name="Product Name" data-price="222.00">
+						  Add to <i class="icon-shopping-cart"></i>
+						</a>
+						<a class="btn btn-primary" href="#">₱222.00</a>
+					  </h4>
+					  
 					</div>
 				  </div>
 				</li>
@@ -444,7 +469,14 @@
 					  <p> 
 						Lorem Ipsum is simply dummy text. 
 					  </p>
-					  <h4 style="text-align:center"><a class="btn" href="#"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">₱222.00</a></h4>
+					  <h4 style="text-align:center">
+						<a class="btn" href="#"> <i class="icon-zoom-in"></i></a>
+						<a class="btn btn-add-to-cart" href="javascript:void(0)" data-name="Product Name" data-price="222.00">
+						  Add to <i class="icon-shopping-cart"></i>
+						</a>
+						<a class="btn btn-primary" href="#">₱222.00</a>
+					  </h4>
+					  
 					</div>
 				  </div>
 				</li>
@@ -456,7 +488,14 @@
 					  <p> 
 						Lorem Ipsum is simply dummy text. 
 					  </p>
-					  <h4 style="text-align:center"><a class="btn" href="#"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">₱222.00</a></h4>
+					  <h4 style="text-align:center">
+						<a class="btn" href="#"> <i class="icon-zoom-in"></i></a>
+						<a class="btn btn-add-to-cart" href="javascript:void(0)" data-name="Product Name" data-price="222.00">
+						  Add to <i class="icon-shopping-cart"></i>
+						</a>
+						<a class="btn btn-primary" href="#">₱222.00</a>
+					  </h4>
+					  
 					</div>
 				  </div>
 				</li>
@@ -468,7 +507,14 @@
 					  <p> 
 						Lorem Ipsum is simply dummy text. 
 					  </p>
-					   <h4 style="text-align:center"><a class="btn" href="#"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">₱222.00</a></h4>
+					  <h4 style="text-align:center">
+						<a class="btn" href="#"> <i class="icon-zoom-in"></i></a>
+						<a class="btn btn-add-to-cart" href="javascript:void(0)" data-name="Product Name" data-price="222.00">
+						  Add to <i class="icon-shopping-cart"></i>
+						</a>
+						<a class="btn btn-primary" href="#">₱222.00</a>
+					  </h4>
+					  
 					</div>
 				  </div>
 				</li>
@@ -630,6 +676,33 @@
 		event.preventDefault(); // Prevent form from submitting
 		searchProducts();
 	});
+	// JavaScript snippet to handle "Add to Cart" functionality
+function addToCart(productName, productPrice) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.push({ name: productName, price: productPrice, quantity: 1 });
+    localStorage.setItem('cart', JSON.stringify(cart));
+    updateCartCount();
+}
+
+function updateCartCount() {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    document.querySelectorAll('#item-count-display').forEach(span => {
+        span.textContent = cart.length;
+    });
+}
+
+// Add event listener for add-to-cart buttons
+document.querySelectorAll('.btn-add-to-cart').forEach(button => {
+    button.addEventListener('click', () => {
+        let productName = button.getAttribute('data-name');
+        let productPrice = parseFloat(button.getAttribute('data-price'));
+        addToCart(productName, productPrice);
+    });
+});
+
+// Initialize cart count on page load
+document.addEventListener('DOMContentLoaded', updateCartCount);
+
 </script>
 
 </body>
